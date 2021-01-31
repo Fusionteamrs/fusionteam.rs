@@ -1,12 +1,8 @@
-import Head from 'next/head'
+import GlobalHead from './GlobalHead'
 
 function Error({ statusCode }) {
   return (
-    <Head>
-      <meta name="robots" content="noindex" />
-      <title>{`Fusion Team - ${statusCode}`}</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+    <GlobalHead title={`Fusion Team - ${statusCode}`} />
   )
 }
 
