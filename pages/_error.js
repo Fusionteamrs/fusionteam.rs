@@ -1,6 +1,12 @@
+import Head from 'next/head'
+
 function Error({ statusCode }) {
   return (
-    <p>{statusCode}</p>
+    <Head>
+      <meta name="robots" content="noindex" />
+      <title>{`Fusion Team - ${statusCode}`}</title>
+      <link rel="icon" href="/favicon.ico" />
+    </Head>
   )
 }
 
