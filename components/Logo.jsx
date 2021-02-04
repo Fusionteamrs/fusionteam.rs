@@ -1,13 +1,11 @@
-import Image from 'next/image'
-
 export default function Logo() {
   return (
     <>
-      <Image
+      <img
         src="/fustionteam.svg"
         alt="Fusion Team"
         width="500"
-        height="auto"
+        style={{ maxWidth: '100%' }}
       />
     </>
   )
